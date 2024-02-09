@@ -16,7 +16,7 @@ dogBtn.addEventListener("click", getRandomDog);
 
 // getRandomCat images
 function getRandomCat() {
-    fetch("http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true").then((response) => response.json())
+    fetch("https://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true").then((response) => response.json())
     .then(responseData => {
         cat.innerHTML = `<img src="${responseData[0]}"/>`;
     });
